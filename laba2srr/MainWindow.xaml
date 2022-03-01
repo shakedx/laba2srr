@@ -1,0 +1,24 @@
+﻿<Window x:Class="laba2srr.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="450">
+    <DockPanel LastChildFill="True" VerticalAlignment="Top" Margin="10">
+        <Label Content="Введите ширину:" DockPanel.Dock="Top"/>
+        <TextBox x:Name="width" DockPanel.Dock="Top"/>
+        <Label Content="Введите высоту:" DockPanel.Dock="Top"/>
+        <TextBox x:Name="height" DockPanel.Dock="Top"/>
+        <Label Content="Введите длину:" DockPanel.Dock="Top"/>
+        <TextBox x:Name="length" DockPanel.Dock="Top"/>
+        <Label Content="Введите удельный вес:" DockPanel.Dock="Top"/>
+        <TextBox x:Name="density" DockPanel.Dock="Top"/>
+        <Label Content="Введите количество частей на которые попилят: " DockPanel.Dock="Top"/>
+        <TextBox x:Name="part" DockPanel.Dock="Top"/>
+        <Button Content="Вычислить площадь поверхности одной распиленной балки" DockPanel.Dock="Top" Click="ButtonBase_OnClick1"/>
+        <Button Content="Вычислить вес распиленной балки:" DockPanel.Dock="Top" Click="ButtonBase_OnClick2" />
+        <TextBlock x:Name="Result" DockPanel.Dock="Top"/>
+        <TextBlock x:Name="Result2" DockPanel.Dock="Bottom"/>
+    </DockPanel>
+</Window>
